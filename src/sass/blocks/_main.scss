@@ -1,0 +1,114 @@
+.main {
+    position: relative;
+    background: #220037;
+    background-image: url(../../img/Gradients.png);
+    height: auto;
+    background-blend-mode: multiply;
+    padding: 240px 0 100px 0;
+    &__title {
+        display: flex;
+        h1 {
+            color: #F7F7F7;
+            text-align: center;
+            font-family: Orbitron;
+            font-size: 159px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 75%; 
+            letter-spacing: -1.59px;
+            text-transform: uppercase;
+            margin-right: 30px;
+        }
+        h2 {
+            color: #F7F7F7;
+            font-family: Orbitron;
+            font-size: 70px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 95%; /* 66.5px */
+            letter-spacing: -0.7px;
+            text-transform: uppercase;
+        }
+    }
+    &_descr {
+        margin-top: 121px;
+        display: flex;
+        align-items: center;
+        width: 60%;
+        &_block {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            &_planet {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 50%;
+                border-radius: 20px;
+                background: rgba(247, 247, 247, 0.07);
+                background: linear-gradient(22deg, rgba(0, 0, 0, 0.7) 32.36%, rgba(34, 0, 55, 0.7) 99.64%);
+                img {
+                    width: 100%;
+                    padding: 20px 20px 0 20px;
+                }
+            }
+            &_learn {
+                width: 50%;
+                border-radius: 20px;
+                border: 3px solid var(--Gradient-Stroke, rgba(247, 247, 247, 0.00));
+                background: rgba(247, 247, 247, 0.07);
+                h6 {
+                    margin-top: 45px;
+                    color: #F7F7F7;
+                    text-align: center;
+                    font-family: Montserrat;
+                    font-size: 25px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 115%; /* 28.75px */
+                    letter-spacing: -0.25px;
+                }
+            }
+        }
+    } 
+    &_btn {
+        margin: 0 auto;
+        margin-top: 23px;
+        display: flex;
+        width: 90%;
+        height: 60px;
+        padding: 20px 32px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 500px;
+        border: 3px solid #F7F7F7;
+        opacity: 0.9;
+        background: none;
+
+        /* text */
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -0.2px;
+        text-transform: uppercase;
+        color: #F7F7F7;
+        text-decoration: none;
+        &:hover {
+            background: #F7F7F7;
+            color: #161616;
+        }
+        &:active {
+            background: #DCDCDC;
+            color: #161616;
+        }
+    
+    } 
+    &_circle {
+        position: absolute;
+        top: 155px;
+        right: 0;
+    }
+}
